@@ -16,16 +16,16 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Natnael Tadesse</title>
   </head>
   <body>
     <!-- Nav-Bar  -->
-    <nav class="nav-bar">
+    <nav class="nav-colored">
       <div class="nav-logo">
         <img
-          src="./images/PicsArt_22-03-09_19-09-21-034.png"
+          src="./images/logo.svg"
           alt=""
-          width="150px"
+      
         />
       </div>
       <div class="nav-links">
@@ -44,9 +44,11 @@
     <header class="header" id="home">
       <section class="header-content">
         <div class="header-text">
-          <!-- <div class="custom-div"></div>
-          <div class="custom-div3"></div> -->
-          <!-- <div class="custom-div-2"></div> -->
+          <div class="custom-div"></div>
+          <div class="custom-div3"></div>
+          <div class="custom-div5"></div>
+          <div class="custom-div4"></div>
+          <div class="custom-div2"></div>
           <div class="softwareE-text">
             <h1 class="software">Software</h1>
             <h1>Engineer</h1>
@@ -60,8 +62,8 @@
     <!-- Header End -->
 
       <!-- Skils -->
-      <div class="_skills">
-      <section class="skills row" id="skills">
+      <div class="_skills " id="skills">
+      <section class="skills row" >
         <div class="col-5 skill-card ">
           <img src="./images/world-wide-web.png" alt="" class="skill-icon" />
           <p class="skill-card-text cu-text">Web Development</p>
@@ -99,11 +101,41 @@
       </section>
     </div>  
       <!-- Skills End -->
+      <div class="_projects" id="projects">
+      <section class="projects row">
+        <h1 class="" style="text-align : center">Projects</h1>
+        <div class="col-12 projects-card " onclick="ml()">
+          <img src="./images/deep-learning.png" alt="" class="skill-icon" />
+          <p class="skill-card-text cu-text">Machin Learning</p>
+          <span class="project-title">Traffic Sign Detection</span>
+          <p class="project-desc">I have developed a machine learning model for traffic sign detection, which enables users to capture and send pictures of any traffic sign to the model. The model uses sophisticated algorithms to analyze the image and detect the sign, providing users with accurate and reliable information on the sign's meaning and significance. By deploying the model through a Telegram bot, users can quickly and easily access this functionality on their smartphones, making it a convenient and user-friendly tool for drivers and other road users..</p>
+        </div>
+        <h1 class="" style="text-align : center">mimi-projects</h1>
+        <div class="col-5 projects-card">
+          <img src="./images/java.png" alt="" class="skill-icon" />
+          <p class="skill-card-text cu-text">java</p>
+          <span class="project-title">Tic Tac Toe</span>
+          <p class="project-desc">I have developed a Java-based Tic Tac Toe game, which is a classic two-player game that involves placing Xs and Os on a 3x3 board. In addition to the standard gameplay, I have also integrated a computer player, which can play against human players. The computer player is designed to be intelligent and challenging, providing players with a competitive and engaging gaming experience.</p>
+        </div>
+  
+        <div class="col-5 projects-card">
+          <img src="./images/java.png" alt="" class="skill-icon" />
+          <p class="skill-card-text cu-text">java</p>
+          <span class="project-title">Consol-Based order-game</span>
+          <p class="project-desc">The "order-game" is a fun and challenging console-based game that involves guessing a 4-digit number. The game is designed to test your logic and reasoning skills as you try to figure out the correct sequence of numbers in the given order.</p>
+        </div>
+        <div class="col-12 projects-card">
+          <img src="./images/java.png" alt="" class="skill-icon" />
+          <p class="skill-card-text cu-text">java</p>
+          <span class="project-title">Mini audio player</span>
+          <p class="project-desc">The mini audio player is a Java-based application that provides users with basic audio playback functionalities. It is a lightweight and user-friendly application that allows users to listen to their favorite music or audio files on their computers.</p>
+        </div>
+      </section>
 
-
+    </div>
       <script>
-window.onscroll = (val) =>{
-  console.log("this is the mess", window.location.hash)
+const ml = ()=>{
+  window.open("https://github.com/SomeonePro72/Traffic-Sign-Detection")
 }
       </script>
   </body>
