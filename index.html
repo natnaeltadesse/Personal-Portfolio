@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-
       href="./node_modules/bootstrap/dist/css/bootstrap-grid.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,22 +16,19 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.svg">
     <title>Natnael Tadesse</title>
   </head>
   <body>
     <!-- Nav-Bar  -->
-    <nav class="nav-colored">
+    <nav class="nav-colored" id="nav-colored">
       <div class="nav-logo">
-        <img
-          src="./images/logo.svg"
-          alt=""
-      
-        />
+        <img src="./images/logo.svg" alt="" />
       </div>
       <div class="nav-links">
         <ul>
           <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#skills" class="">Skills</a></li>
+          <li><a href="#skills"id='sk' class="">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -41,7 +38,7 @@
     <!-- Nav-Bar End -->
 
     <!-- Header -->
-    <header class="header" id="home">
+    <header class="header " id="home">
       <section class="header-content">
         <div class="header-text">
           <div class="custom-div"></div>
@@ -49,7 +46,7 @@
           <div class="custom-div5"></div>
           <div class="custom-div4"></div>
           <div class="custom-div2"></div>
-          <div class="softwareE-text">
+          <div class="softwareE-text hidden">
             <h1 class="software">Software</h1>
             <h1>Engineer</h1>
           </div>
@@ -61,82 +58,144 @@
     </header>
     <!-- Header End -->
 
-      <!-- Skils -->
-      <div class="_skills " id="skills">
-      <section class="skills row" >
-        <div class="col-5 skill-card ">
+    <!-- Skils -->
+    <div class="_skills" id="skills">
+      <section class="skills row">
+        <div class="col-5 skill-card hidden-l">
           <img src="./images/world-wide-web.png" alt="" class="skill-icon" />
           <p class="skill-card-text cu-text">Web Development</p>
         </div>
-        <div class="col-5 skill-card">
+        <div class="col-5 skill-card hidden-r">
           <img src="./images/android.png" alt="" class="skill-icon" />
           <p class="skill-card-text cu-text">Android</p>
         </div>
-          <div class="skill-card col-3">
-            <img src="./images/java.png" alt="" class="skill-icon" />
-            <p class="skill-card-text cu-text">Java</p>
+        <div class="skill-card col-3 hidden-l">
+          <img src="./images/java.png" alt="" class="skill-icon" />
+          <p class="skill-card-text cu-text">Java</p>
+        </div>
+        <div class="skill-card col-3 hidden-sc">
+          <img src="./images/c-.png" alt="" class="skill-icon" />
+          <p class="skill-card-text cu-text">C++</p>
+        </div>
+        <div class="skill-card col-3 hidden-r">
+          <img src="./images/c-sharp.png" alt="" class="skill-icon" />
+          <p class="skill-card-text cu-text">C#</p>
+        </div>
+        <div class="skill-card col-3 hidden-l">
+          <img
+            src="./images/js.png "
+            loading="lazy"
+            alt=""
+            class="skill-icon"
+          />
+          <p class="skill-card-text cu-text">JavaScript</p>
+        </div>
+        <div class="skill-card col-3 hidden-sc">
+          <img src="./images/react.png" alt="" class="skill-icon" />
+          <p class="skill-card-text cu-text">React</p>
+        </div>
+        <div class="skill-card col-3 hidden-r">
+          <img src="./images/bootstrap.png" alt="" class="skill-icon" />
+          <p class="skill-card-text cu-text">Bootstrap</p>
+        </div>
+      </section>
+    </div>
+    <!-- Skills End -->
+    <div class="_projects" id="projects">
+      <section class="projects row">
+        <h1 class="" style="text-align: center">Projects</h1>
+        <div class="col-10 projects-card" onclick="ml()">
+          <img src="./images/deep-learning.png" alt="" class="project-icon" />
+          <p class="skill-card-text cu-text">Machin Learning</p>
+          <div class="project-text">
+            <span class="project-title">Traffic Sign Detection</span>
+            <p class="project-desc">
+              I have developed a machine learning model for traffic sign
+              detection, which enables users to capture and send pictures of any
+              traffic sign to the model. The model uses sophisticated algorithms
+              to analyze the image and detect the sign, providing users with
+              accurate and reliable information on the sign's meaning and
+              significance. By deploying the model through a Telegram bot, users
+              can quickly and easily access this functionality on their
+              smartphones, making it a convenient and user-friendly tool for
+              drivers and other road users.
+            </p>
           </div>
-          <div class="skill-card col-3">
-            <img src="./images/c-.png" alt="" class="skill-icon" />
-            <p class="skill-card-text cu-text">C++</p>
+        </div>
+        <h1 class="" style="text-align: center">mini projects</h1>
+        <div class="col-3 projects-card">
+          <img src="./images/java.png" alt="" class="project-icon" />
+          <p class="skill-card-text cu-text">Java</p>
+          <div class="project-text">
+            <span class="project-title">Tic Tac Toe</span>
+            <p class="project-desc">
+              I have developed a Java-based Tic Tac Toe game, which is a classic
+              two-player game that involves placing Xs and Os on a 3x3 board. In
+              addition to the standard gameplay, I have also integrated a
+              computer player, which can play against human players.
+            </p>
           </div>
-          <div class="skill-card col-3">
-            <img src="./images/c-sharp.png" alt="" class="skill-icon" />
-            <p class="skill-card-text cu-text">C#</p>
+        </div>
+
+        <div class="col-3 projects-card">
+          <img src="./images/java.png" alt="" class="project-icon" />
+          <p class="skill-card-text cu-text">Java</p>
+          <div class="project-text">
+            <span class="project-title">Consol-Based order-game</span>
+            <p class="project-desc">
+              The "order-game" is a fun and challenging console-based game that
+              involves guessing a 4-digit number. The game is designed to test
+              your logic and reasoning skills as you try to figure out the
+              correct sequence of numbers in the given order.
+            </p>
           </div>
-          <div class="skill-card col-3">
-            <img src="./images/js.png " loading="lazy" alt="" class="skill-icon" />
-            <p class="skill-card-text cu-text">JavaScript</p>
+        </div>
+        <div class="col-3 projects-card">
+          <img src="./images/java.png" alt="" class="project-icon" />
+          <p class="skill-card-text cu-text">Java</p>
+          <div class="project-text">
+            <span class="project-title">Mini audio player</span>
+            <p class="project-desc">
+              The mini audio player is a Java-based application that provides
+              users with basic audio playback functionalities. It is a
+              lightweight and user-friendly application that allows users to
+              listen to their favorite music or audio files on their computers.
+            </p>
           </div>
-          <div class="skill-card col-3">
-            <img src="./images/react.png" alt="" class="skill-icon" />
-            <p class="skill-card-text cu-text">React</p>
-          </div>
-          <div class="skill-card col-3">
-            <img src="./images/bootstrap.png" alt="" class="skill-icon" />
-            <p class="skill-card-text cu-text">Bootstrap</p>
+        </div>
+      </section>
+    </div>
+    <div class="_contact" id="contact">
+      <section class="contact">
+        <span class="contact-text">Say hello</span>
+        <div class="addresses">
+          <div class="email-phone">
+            <span class="email"> <a href="mailto:natahnel097200@gmail.com"><i class='bx bxs-envelope'></i>: nathanel0972@gmail.com</a> </span>
+            <span class="phone"> <a href="tel:+251926942964"> <i class='bx bxs-phone' ></i>: +251926942964</a></span>
+            <span class="leetcode"><a href="https://leetcode.com/Natnael_32/"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/null/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png"/>: LeetCode</a></span>
           </div>
 
-   
-      </section>
-    </div>  
-      <!-- Skills End -->
-      <div class="_projects" id="projects">
-      <section class="projects row">
-        <h1 class="" style="text-align : center">Projects</h1>
-        <div class="col-12 projects-card " onclick="ml()">
-          <img src="./images/deep-learning.png" alt="" class="skill-icon" />
-          <p class="skill-card-text cu-text">Machin Learning</p>
-          <span class="project-title">Traffic Sign Detection</span>
-          <p class="project-desc">I have developed a machine learning model for traffic sign detection, which enables users to capture and send pictures of any traffic sign to the model. The model uses sophisticated algorithms to analyze the image and detect the sign, providing users with accurate and reliable information on the sign's meaning and significance. By deploying the model through a Telegram bot, users can quickly and easily access this functionality on their smartphones, making it a convenient and user-friendly tool for drivers and other road users..</p>
         </div>
-        <h1 class="" style="text-align : center">mimi-projects</h1>
-        <div class="col-5 projects-card">
-          <img src="./images/java.png" alt="" class="skill-icon" />
-          <p class="skill-card-text cu-text">java</p>
-          <span class="project-title">Tic Tac Toe</span>
-          <p class="project-desc">I have developed a Java-based Tic Tac Toe game, which is a classic two-player game that involves placing Xs and Os on a 3x3 board. In addition to the standard gameplay, I have also integrated a computer player, which can play against human players. The computer player is designed to be intelligent and challenging, providing players with a competitive and engaging gaming experience.</p>
+        <div class="footer">
+          <span class="footer-text">
+            Natnael Tadesse &copy
+          </span>
+          <div class="social">
+            <span class="github"><a href="https://github.com/SomeonePro72"><i class='bx bxl-github' ></i></a></span>
+            <span class="linkedin"><a href="https://www.linkedin.com/in/nathanael-tadesse-849667220/"><i class='bx bxl-linkedin' ></i></a></span>
+            <span class="telegram"><a href="https://t.me/Mnbvcxz1026"><i class='bx bxl-telegram'></i></a></span>
+            <span class="instagram"><a href="https://www.instagram.com/t_natnael/"><i class='bx bxl-instagram' ></i></a></span>
+            
+          </div>
+         
         </div>
-  
-        <div class="col-5 projects-card">
-          <img src="./images/java.png" alt="" class="skill-icon" />
-          <p class="skill-card-text cu-text">java</p>
-          <span class="project-title">Consol-Based order-game</span>
-          <p class="project-desc">The "order-game" is a fun and challenging console-based game that involves guessing a 4-digit number. The game is designed to test your logic and reasoning skills as you try to figure out the correct sequence of numbers in the given order.</p>
-        </div>
-        <div class="col-12 projects-card">
-          <img src="./images/java.png" alt="" class="skill-icon" />
-          <p class="skill-card-text cu-text">java</p>
-          <span class="project-title">Mini audio player</span>
-          <p class="project-desc">The mini audio player is a Java-based application that provides users with basic audio playback functionalities. It is a lightweight and user-friendly application that allows users to listen to their favorite music or audio files on their computers.</p>
-        </div>
+        <div class="sp" ></div>
       </section>
 
     </div>
-      <script>
-const ml = ()=>{
-  window.open("https://github.com/SomeonePro72/Traffic-Sign-Detection")
-}
-      </script>
+    <script src="app.js"></script>
+    <script>
+    
+    </script>
   </body>
 </html>
