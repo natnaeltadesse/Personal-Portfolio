@@ -57,6 +57,12 @@ h1{
   margin: auto;
   
 }
+.projects>h1{
+margin: 10% 0 5%;
+}
+.projects>h1:nth-child(1){
+  margin: 0 0;
+}
 .software::after{
   content: '';
   display: block;
@@ -165,12 +171,12 @@ li:hover::after{
   padding-bottom: 5%;
 }
 .projects{
-  position: relative;
   width: 70%;
+  position: relative;
   left: 15%;
   box-sizing: border-box;
   gap:1%;
-  justify-content: center;
+  justify-content: center ;
 }
 .project-title{
   display: block;
@@ -193,10 +199,10 @@ li:hover::after{
     border-radius: 5px;
     filter: grayscale(0%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 10px 5px;
-    margin: 2% 0 10% !important;
+    margin: 0 0 1% !important;
     
     transition: 0.2s;
     text-align: justify;
